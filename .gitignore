@@ -1,0 +1,7 @@
+project*-openrc.sh
+
+.venv
+.venv?
+
+*.sw?
+*~
