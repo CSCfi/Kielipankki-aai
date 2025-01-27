@@ -1,0 +1,7 @@
+all:
+  hosts:
+    localhost:
+      ansible_connection: local
+      floating_ip: 86.50.253.167
+      vm_name_postfix: qa
+      ansible_python_interpreter: python

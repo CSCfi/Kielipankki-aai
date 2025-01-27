@@ -1,0 +1,18 @@
+# You'll need to download and source your credentials before this will work:
+#  https://research.csc.fi/pouta-credentials
+#
+
+- name: Create virtual machine on cPouta
+  hosts: localhost # The OpenStack Shade modules run by Shade on your local machine.
+  remote_user: almalinux
+  become: false
+
+  vars:
+    authorized_users:  # TODO ASSO people
+      - ktegel
+      - ajarven
+      - matthies
+      - shardwic
+  roles:
+    - role: kielipankki.common.create_instances
+      tags: create_instances
