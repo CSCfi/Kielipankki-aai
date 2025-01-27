@@ -1,0 +1,4 @@
+python-openstackclient
+ansible
+dnspython
+openstacksdk
