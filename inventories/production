@@ -1,0 +1,7 @@
+all:
+  hosts:
+    localhost:
+      ansible_connection: local
+      floating_ip: 86.50.230.109
+      vm_name_postfix: prod
+      ansible_python_interpreter: python
