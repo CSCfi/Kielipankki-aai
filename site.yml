@@ -8,11 +8,14 @@
   become: false
 
   vars:
-    authorized_users:  # TODO ASSO people
+    authorized_users:
       - ktegel
       - ajarven
       - matthies
       - shardwic
+      - apasanen
+      - jlauros
+      - ssilen
   roles:
     - role: kielipankki.common.create_instances
       tags: create_instances
