@@ -19,6 +19,9 @@ servers:
        hostname: "{{ pouta_instance_name }}"
        group: "{{ instance_name }}"
 
+sg_custom_ssh_ips:
+  - "193.166.83.240/28"
+
 security_group_rules:
 
   - name: http
