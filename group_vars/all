@@ -20,7 +20,7 @@ servers:
        group: "{{ instance_name }}"
 
 sg_custom_ssh_ips:
-  - "193.166.83.240/28"
+  - "193.166.83.240/28"  # rsa-admin-remote for ASSO people
 
 security_group_rules:
 
