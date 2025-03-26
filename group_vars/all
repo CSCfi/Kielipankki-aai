@@ -11,7 +11,7 @@ project_security_groups: "default,{{ project_sg }}" # don't add spaces here!
 servers:
   - name: "{{ pouta_instance_name }}"
     image: "{{ std_image }}"
-    flavor: standard.small
+    flavor: standard.medium
     key_name: "{{ project_key }}"
     security_groups: "{{ project_security_groups }}"
     network: "{{ network }}"
@@ -29,3 +29,9 @@ security_group_rules:
     port: 80
     allowed_ips:
       - "192.168.1.0/24" # pouta local network
+
+  - name: https
+    protocol: tcp
+    port: 443
+    allowed_ips:
+      - "0.0.0.0/0"
