@@ -24,6 +24,12 @@ sg_custom_ssh_ips:
 
 security_group_rules:
 
+  - name: ping
+    protocol: icmp
+    port: -1
+    allowed_ips:
+      - "193.167.254.68/32" # opsview
+
   - name: http
     protocol: tcp
     port: 80
