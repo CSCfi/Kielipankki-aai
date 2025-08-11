@@ -16,6 +16,8 @@
       - apasanen
       - jlauros
       - ssilen
+      - jartoivo
+
   roles:
     - role: kielipankki.common.create_instances
       tags: create_instances
