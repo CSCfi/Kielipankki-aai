@@ -41,3 +41,6 @@ security_group_rules:
     port: 443
     allowed_ips:
       - "0.0.0.0/0"
+
+koivu_ansible_project_number: 2000680
+koivu_ansible_retention_months: 15
